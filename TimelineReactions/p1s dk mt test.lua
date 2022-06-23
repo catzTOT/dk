@@ -1032,6 +1032,7 @@ local tbl =
 							variableTogglesType = 3,
 							version = 2,
 						},
+						inheritedIndex = 1,
 						inheritedObjectUUID = "",
 						inheritedOverwrites = 
 						{
@@ -1211,6 +1212,7 @@ local tbl =
 							variableTogglesType = 3,
 							version = 2,
 						},
+						inheritedIndex = 1,
 						inheritedObjectUUID = "",
 						inheritedOverwrites = 
 						{
@@ -4552,6 +4554,97 @@ local tbl =
 				timerOffset = -3,
 				timerStartOffset = 0,
 				uuid = "ef914609-f008-c965-8f01-4c89c376f2b9",
+				version = 2,
+			},
+			inheritedObjectUUID = "",
+		},
+	},
+	[60] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							actionID = -1,
+							actionLua = "",
+							allowInterrupt = false,
+							atomicPriority = false,
+							castAtMouse = false,
+							castPosX = 0,
+							castPosY = 0,
+							castPosZ = 0,
+							clusterMinPercent = false,
+							clusterMinTarget = 1,
+							clusterRadius = 8,
+							clusterRange = 30,
+							conditions = 
+							{
+							},
+							endIfUsed = false,
+							fallthrough = false,
+							gVar = "ACR_RikuDRK2_Tankbar_LivingDead",
+							gVarValue = 1,
+							ignoreWeaveRules = false,
+							isAreaTarget = false,
+							luaNeedsWeaveWindow = false,
+							luaReturnsAction = false,
+							name = "",
+							potType = 1,
+							setTarget = false,
+							showPositionPreview = false,
+							stopCasting = false,
+							stopMoving = false,
+							targetContentID = -1,
+							targetName = "",
+							targetSubType = "Nearest",
+							targetType = "Self",
+							untarget = false,
+							useForWeaving = false,
+							useItem = false,
+							useItemID = 0,
+							useItemName = "",
+							usePot = false,
+							uuid = "3c90231a-eca7-37ab-9cf9-466d3898a912",
+							variableIsHover = false,
+							variableTogglesType = 3,
+							version = 2,
+						},
+						inheritedObjectUUID = "",
+						inheritedOverwrites = 
+						{
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = true,
+				eventType = 1,
+				execute = "",
+				executeType = 1,
+				lastUse = 0,
+				loop = false,
+				luaNeedsWeaveWindow = false,
+				luaReturnsAction = false,
+				mechanicTime = 428.4,
+				name = "wudi",
+				randomOffset = 0,
+				throttleTime = 0,
+				timeRandomRange = false,
+				timeRange = false,
+				timelineIndex = 60,
+				timeout = 5,
+				timerEndOffset = 0,
+				timerOffset = -3,
+				timerStartOffset = 0,
+				uuid = "e0cb653f-9339-1cba-bc82-5f273d761a14",
 				version = 2,
 			},
 			inheritedObjectUUID = "",

@@ -6839,6 +6839,7 @@ local tbl =
 				uuid = "18f47403-64fe-8b05-84d5-bfa0e0c34aca",
 				version = 2,
 			},
+			inheritedIndex = 2,
 			inheritedObjectUUID = "",
 		},
 		
