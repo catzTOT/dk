@@ -13,8 +13,56 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
-							uuid = "db10dc0e-9ae2-9d3e-9240-31c091d581b3",
+							conditions = 
+							{
+								
+								{
+									"240f6f05-ffb3-7f3a-ad63-d194d81dcdf0",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Hotbar_Grit",
+							uuid = "298002e2-08cb-09eb-84c2-b242b5196282",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							uuid = "240f6f05-ffb3-7f3a-ad63-d194d81dcdf0",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 16,
+				name = "Noob Forgot Stance",
+				timelineIndex = 2,
+				timerOffset = -14,
+				uuid = "afaed781-4692-a859-ac90-b0884915a2aa",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_DarkMissionary",
+							uuid = "80f7ff43-20d2-63a0-9bf2-ab928ccfbfe9",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -24,13 +72,16 @@ local tbl =
 				{
 				},
 				mechanicTime = 16,
-				name = "xuechou",
+				name = "anheibudao",
 				timelineIndex = 2,
-				timerOffset = -9,
-				uuid = "f67ee8d6-0727-2884-97c8-f125ca4e44e5",
+				timerOffset = -10,
+				uuid = "909eeb02-7fa9-1a24-8648-58f303199304",
 				version = 2,
 			},
 		},
+	},
+	[3] = 
+	{
 		
 		{
 			data = 
@@ -46,13 +97,13 @@ local tbl =
 							{
 								
 								{
-									"10fb93ec-05c6-6fec-af5e-822ff7e0783c",
+									"198891ea-c11a-080b-a6d1-52259938bb86",
 									true,
 								},
 							},
-							gVar = "ACR_RikuDRK2_Hotbar_Grit",
-							uuid = "410aff7e-6186-f77f-aac3-0201f565a75b",
-							variableTogglesType = 2,
+							gVar = "ACR_RikuDRK2_Tankbar_LivingDead",
+							uuid = "31505fdd-09f8-1418-a1ae-7b0de405b1c9",
+							variableTogglesType = 3,
 							version = 2,
 						},
 					},
@@ -63,19 +114,19 @@ local tbl =
 					{
 						data = 
 						{
-							buffID = 743,
-							category = "Self",
-							dequeueIfLuaFalse = true,
-							uuid = "10fb93ec-05c6-6fec-af5e-822ff7e0783c",
+							conditionType = 4,
+							enmityValue = 100,
+							name = "MT enmity",
+							uuid = "198891ea-c11a-080b-a6d1-52259938bb86",
 							version = 2,
 						},
 					},
 				},
-				mechanicTime = 16,
-				name = "zuo2chou",
-				timelineIndex = 2,
-				timerOffset = -14,
-				uuid = "fd2a5751-0de9-5300-b7a7-1422b285ff8a",
+				mechanicTime = 26.3,
+				name = "Living Dead",
+				timelineIndex = 3,
+				timerOffset = -9,
+				uuid = "b349d373-6f9a-b81f-a9ac-ecf3cdb23d4b",
 				version = 2,
 			},
 		},
@@ -97,91 +148,12 @@ local tbl =
 							{
 								
 								{
-									"bea8aa19-24c1-e255-8c2e-923bb0638cb9",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "bed0b7d5-3259-92c3-adf3-e5da3d50c810",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"1266214f-7871-2ad5-b8f8-07e9952c4689",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "5180756a-196f-fb29-b1e7-25ee23661278",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							conditionType = 4,
-							enmityValue = 100,
-							name = "MT Enmity",
-							uuid = "bea8aa19-24c1-e255-8c2e-923bb0638cb9",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 4,
-							enmityValue = 99,
-							name = "Off Tank Enmity",
-							uuid = "1266214f-7871-2ad5-b8f8-07e9952c4689",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 38.8,
-				name = "heidun",
-				timelineIndex = 5,
-				timerOffset = -6,
-				uuid = "8ae4c345-16a5-f3fa-abad-c5c215dae56f",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"4a62391d-6f60-4784-82f5-249c15aebb66",
+									"b5942829-a6f2-289c-b9f3-1ca5345d3b1d",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_OblationSelf",
-							uuid = "e70ac6f7-202d-93bc-a172-fd2a4e400c2d",
+							uuid = "55398191-f42d-325e-b404-d7a400098597",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -195,12 +167,12 @@ local tbl =
 							{
 								
 								{
-									"3a40eb7e-949b-f756-80ab-b62baf441e43",
+									"38052917-5e4d-e985-938e-18fe750a9399",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_OblationOT",
-							uuid = "3d621505-0b41-906d-b0a2-e85705cefcad",
+							uuid = "fa3cbbc4-c644-2baa-b833-d5a72d03ba5d",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -215,7 +187,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "4a62391d-6f60-4784-82f5-249c15aebb66",
+							uuid = "b5942829-a6f2-289c-b9f3-1ca5345d3b1d",
 							version = 2,
 						},
 					},
@@ -227,7 +199,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "3a40eb7e-949b-f756-80ab-b62baf441e43",
+							uuid = "38052917-5e4d-e985-938e-18fe750a9399",
 							version = 2,
 						},
 					},
@@ -240,16 +212,16 @@ local tbl =
 							category = "Self",
 							comparator = 2,
 							conditionType = 4,
-							uuid = "93f6c74d-904c-c3ac-a3e9-7f4f39549faf",
+							uuid = "1cd6ee86-caaa-c2ce-abd3-b45eac88e31a",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 38.8,
-				name = "fengxian",
+				name = "Oblation 1",
 				timelineIndex = 5,
 				timerOffset = -10,
-				uuid = "e6bbc407-dca5-d767-b80f-b31397db9c72",
+				uuid = "b51154aa-8fc7-c78d-801c-26eb5896ea0a",
 				version = 2,
 			},
 		},
@@ -264,8 +236,8 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_DarkMissionary",
-							uuid = "4087ae27-eb2e-1a45-aca2-709a52fa60fa",
+							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							uuid = "a7dc875d-eaf7-8b99-b21e-078d0030102d",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -275,10 +247,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 38.8,
-				name = "anheibudao",
+				name = "Reprisal",
 				timelineIndex = 5,
-				timerOffset = -14,
-				uuid = "9fd235d0-ee5c-bd2e-9cfb-dc65925e2010",
+				timerOffset = -9,
+				uuid = "b0e05b08-a7c9-e26c-ae6e-42b3929b6eb9",
 				version = 2,
 			},
 		},
@@ -300,12 +272,12 @@ local tbl =
 							{
 								
 								{
-									"2097e34d-0ac1-52a0-ab60-182dcaafea75",
+									"111f2d60-4145-532b-b9f4-e17514b767aa",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_OblationOT",
-							uuid = "cee3dcd7-a577-a198-b6a6-ab4d5e6fe90f",
+							uuid = "506dc14f-42ad-26b9-a953-49760cf2d2b5",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -319,12 +291,12 @@ local tbl =
 							{
 								
 								{
-									"2f97a02e-58d9-ba4f-b33b-457ea9607f9f",
+									"557c10f4-d397-6237-befb-8bfc0fb771c7",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_OblationSelf",
-							uuid = "75aebd23-51d9-94a1-a09e-b4305262888b",
+							uuid = "275c1b96-bd20-ca4a-9e59-edfd78e09a12",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -343,7 +315,7 @@ local tbl =
 							name = "Check For Party",
 							partyTargetNumber = 4,
 							partyTargetSubType = "Number",
-							uuid = "2097e34d-0ac1-52a0-ab60-182dcaafea75",
+							uuid = "111f2d60-4145-532b-b9f4-e17514b767aa",
 							version = 2,
 						},
 					},
@@ -357,16 +329,16 @@ local tbl =
 							name = "Tether party check",
 							partyTargetNumber = 4,
 							partyTargetSubType = "Number",
-							uuid = "2f97a02e-58d9-ba4f-b33b-457ea9607f9f",
+							uuid = "557c10f4-d397-6237-befb-8bfc0fb771c7",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 82.6,
-				name = "fengxian",
+				name = "Oblation 1",
 				timelineIndex = 9,
 				timerOffset = -10,
-				uuid = "16de2ac8-ac8a-4f75-ad3c-b3046fe09767",
+				uuid = "b4bc180a-c041-5e90-98d9-295435710020",
 				version = 2,
 			},
 		},
@@ -391,10 +363,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 82.6,
-				name = "NO JUMP!",
+				name = "Tank Hold Jumps",
 				timelineIndex = 9,
 				timerOffset = -5,
-				uuid = "a2f903aa-5a7a-df9a-ad3d-4582001db8f6",
+				uuid = "259898d7-889e-3e72-85d1-66d1207f98b4",
 				version = 2,
 			},
 		},
@@ -413,7 +385,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Tankbar_DarkMind",
-							uuid = "90e88e67-1984-11ba-a72e-4a843780cfce",
+							uuid = "389721e7-a185-092f-bf81-43c75bd65acd",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -423,39 +395,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 85.1,
-				name = "qiantouming",
+				name = "Dark Mind",
 				timelineIndex = 10,
 				timerOffset = -10,
-				uuid = "15380a53-7b28-04d6-a189-cf02c2d96bba",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
-							uuid = "38e1cc0d-2b67-2b82-adbf-c1bef09e190c",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 85.1,
-				name = "xuechou",
-				timelineIndex = 10,
-				timerOffset = -10,
-				uuid = "f601a959-0bd8-fe4b-9deb-7537e45ede69",
+				uuid = "d78920f9-5e5d-16c8-bb78-477425d09358",
 				version = 2,
 			},
 		},
@@ -471,7 +414,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Tankbar_ShadowWall",
-							uuid = "fc5bb766-2bb8-cfb1-b61f-04a68be1b761",
+							uuid = "3ca5614c-61fd-b412-be39-218657a4e292",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -481,10 +424,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 85.1,
-				name = "anyingqiang",
+				name = "Shadow Wall",
 				timelineIndex = 10,
 				timerOffset = -15,
-				uuid = "097df579-dcff-d7ca-9780-da5d40981c1b",
+				uuid = "14e47089-baa8-aa4b-8638-f3513c60064c",
 				version = 2,
 			},
 		},
@@ -503,12 +446,12 @@ local tbl =
 							{
 								
 								{
-									"9496b6b9-751d-1048-90a9-92bbeb23c638",
+									"67623e1f-e2f1-9702-af1b-f744e41944c2",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "03d24551-35f0-e204-8296-954812f47fe8",
+							uuid = "1954d712-7156-053f-92d3-5342f3c0f357",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -522,12 +465,12 @@ local tbl =
 							{
 								
 								{
-									"f155e8a3-85d1-5dfd-8682-f57e4de3309e",
+									"fc197ca1-8746-bc01-8b3f-dcdd1be76cb4",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "3d141dea-f85d-9092-a91f-cd44bb36912e",
+							uuid = "18c7729e-58c6-96c5-83f9-38091f069629",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -545,7 +488,7 @@ local tbl =
 							inRangeValue = 8,
 							name = "Check For Party",
 							partyTargetSubType = "Number",
-							uuid = "f155e8a3-85d1-5dfd-8682-f57e4de3309e",
+							uuid = "fc197ca1-8746-bc01-8b3f-dcdd1be76cb4",
 							version = 2,
 						},
 					},
@@ -559,16 +502,48 @@ local tbl =
 							name = "Tether party check",
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
-							uuid = "9496b6b9-751d-1048-90a9-92bbeb23c638",
+							uuid = "67623e1f-e2f1-9702-af1b-f744e41944c2",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 85.1,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 10,
 				timerOffset = -4,
-				uuid = "d1e121b4-6540-68f8-9057-8c12979eebca",
+				uuid = "c97001a6-8268-d0ed-850a-f3eb00293596",
+				version = 2,
+			},
+		},
+	},
+	[12] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							uuid = "f251a043-05c9-0a43-a0b8-7a32a5e6d72e",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 98.4,
+				name = "Reprisal",
+				timelineIndex = 12,
+				timerOffset = -10,
+				uuid = "0e4b9af2-bf4d-e3ac-83dd-44d0ef6926ff",
 				version = 2,
 			},
 		},
@@ -587,7 +562,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Hotbar_ArmsLength",
-							uuid = "844396fe-848f-935a-ab63-210d3f548e77",
+							uuid = "49f17aa6-5380-71eb-a31d-88f150237e8e",
 							variableTogglesType = 2,
 							version = 2,
 						},
@@ -597,10 +572,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 115.9,
-				name = "fangjitui",
+				name = "Knockback",
 				timelineIndex = 14,
 				timerOffset = -5,
-				uuid = "bca34097-922b-316f-b4c7-c1fb162743f6",
+				uuid = "6b63101f-c15c-7abb-b3d1-baf095112405",
 				version = 2,
 			},
 		},
@@ -622,12 +597,12 @@ local tbl =
 							{
 								
 								{
-									"e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+									"c63a2101-e2b7-f60c-bc5f-0aa7c795eb86",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "e1ccadd5-9307-6c4d-8bb0-e92d783e0c2d",
+							uuid = "8c50a494-f0a7-33a9-8583-715a5b4f5b9b",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -641,12 +616,12 @@ local tbl =
 							{
 								
 								{
-									"f57db5be-132d-17ff-b90a-646a68b7af54",
+									"2472d284-510e-69a2-a50f-104528e2d236",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "6e9df772-3257-9832-8897-6838b2381b11",
+							uuid = "ea364a28-a43e-a380-baaf-776951839f2b",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -661,7 +636,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+							uuid = "c63a2101-e2b7-f60c-bc5f-0aa7c795eb86",
 							version = 2,
 						},
 					},
@@ -673,16 +648,45 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "f57db5be-132d-17ff-b90a-646a68b7af54",
+							uuid = "2472d284-510e-69a2-a50f-104528e2d236",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 119.7,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 15,
 				timerOffset = -6,
-				uuid = "57291bd3-b206-e30e-9d93-c819839a9083",
+				uuid = "b7ec251e-ed9c-003a-b661-d6e57b1994d4",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_DarkMissionary",
+							uuid = "80f7ff43-20d2-63a0-9bf2-ab928ccfbfe9",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 119.7,
+				name = "anheibudao",
+				timelineIndex = 15,
+				timerOffset = -10,
+				uuid = "aae1a636-0764-f96f-ada1-14aacd59ed16",
 				version = 2,
 			},
 		},
@@ -704,12 +708,12 @@ local tbl =
 							{
 								
 								{
-									"e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+									"c90b58cb-a2b5-0cdf-9c28-6bdea67f6549",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "e1ccadd5-9307-6c4d-8bb0-e92d783e0c2d",
+							uuid = "67d07f41-3866-0497-925d-b96355dbdbad",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -723,12 +727,12 @@ local tbl =
 							{
 								
 								{
-									"f57db5be-132d-17ff-b90a-646a68b7af54",
+									"1791d711-cb49-f364-aadc-f81abc61724a",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "6e9df772-3257-9832-8897-6838b2381b11",
+							uuid = "3ec8e1ae-2a3f-68c2-a7e4-858eee6383e8",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -743,7 +747,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+							uuid = "c90b58cb-a2b5-0cdf-9c28-6bdea67f6549",
 							version = 2,
 						},
 					},
@@ -755,16 +759,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "f57db5be-132d-17ff-b90a-646a68b7af54",
+							uuid = "1791d711-cb49-f364-aadc-f81abc61724a",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 134.5,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 17,
-				timerOffset = -6,
-				uuid = "78cd5efc-ec26-46a4-8709-f9adcd16abcf",
+				timerOffset = -3,
+				uuid = "a5c03dfd-8731-8c20-b469-af78f3a9db4d",
 				version = 2,
 			},
 		},
@@ -786,12 +790,12 @@ local tbl =
 							{
 								
 								{
-									"e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+									"53221cdc-026f-8849-a9db-23093af567c7",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "e1ccadd5-9307-6c4d-8bb0-e92d783e0c2d",
+							uuid = "7e474d29-5d42-987b-b39b-87d4890f3c33",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -805,12 +809,12 @@ local tbl =
 							{
 								
 								{
-									"f57db5be-132d-17ff-b90a-646a68b7af54",
+									"716d785c-7184-82df-b7ca-57e912b763c0",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "6e9df772-3257-9832-8897-6838b2381b11",
+							uuid = "27bde3c3-5b8e-4c37-b215-abaeee8e5e41",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -825,7 +829,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+							uuid = "53221cdc-026f-8849-a9db-23093af567c7",
 							version = 2,
 						},
 					},
@@ -837,16 +841,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "f57db5be-132d-17ff-b90a-646a68b7af54",
+							uuid = "716d785c-7184-82df-b7ca-57e912b763c0",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 152.2,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 18,
-				timerOffset = -6,
-				uuid = "454ff832-b7a1-e8ce-9c72-dab2c8ae2189",
+				timerOffset = -15,
+				uuid = "705d9a57-fa1f-9930-911c-5d5a14adbee5",
 				version = 2,
 			},
 		},
@@ -868,12 +872,12 @@ local tbl =
 							{
 								
 								{
-									"e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+									"93a233c0-e538-cc7a-a974-2f2073750a6d",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "e1ccadd5-9307-6c4d-8bb0-e92d783e0c2d",
+							uuid = "44b9e303-b6de-2998-9f3c-ca73cf4f7514",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -887,12 +891,12 @@ local tbl =
 							{
 								
 								{
-									"f57db5be-132d-17ff-b90a-646a68b7af54",
+									"5fca6ba9-2b35-9600-b258-11ecadaa7e7e",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "6e9df772-3257-9832-8897-6838b2381b11",
+							uuid = "7e6e421c-96a3-d16d-ada6-fab7cc018204",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -907,7 +911,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+							uuid = "93a233c0-e538-cc7a-a974-2f2073750a6d",
 							version = 2,
 						},
 					},
@@ -919,16 +923,45 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "f57db5be-132d-17ff-b90a-646a68b7af54",
+							uuid = "5fca6ba9-2b35-9600-b258-11ecadaa7e7e",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 158.5,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 19,
-				timerOffset = -6,
-				uuid = "7eea14bf-5a4b-70ad-9d45-ecf4c547a2bd",
+				timerOffset = -4,
+				uuid = "4bf09ef4-ce22-8aff-9975-baf1c3a79bb2",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							uuid = "f251a043-05c9-0a43-a0b8-7a32a5e6d72e",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 158.5,
+				name = "Reprisal",
+				timelineIndex = 19,
+				timerOffset = -10,
+				uuid = "1f9405e2-235d-ac13-8be0-35c09ec2f444",
 				version = 2,
 			},
 		},
@@ -950,12 +983,12 @@ local tbl =
 							{
 								
 								{
-									"e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+									"b0c2da3c-2431-ea35-b353-9634f6c2509c",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "e1ccadd5-9307-6c4d-8bb0-e92d783e0c2d",
+							uuid = "940f9bf0-202d-e77b-8768-3af548331336",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -969,12 +1002,12 @@ local tbl =
 							{
 								
 								{
-									"f57db5be-132d-17ff-b90a-646a68b7af54",
+									"f2665578-2443-2355-ad4d-1f75000ccf4b",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "6e9df772-3257-9832-8897-6838b2381b11",
+							uuid = "07e9e7d6-706a-4dce-b47b-43f0aea443be",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -989,7 +1022,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+							uuid = "b0c2da3c-2431-ea35-b353-9634f6c2509c",
 							version = 2,
 						},
 					},
@@ -1001,16 +1034,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "f57db5be-132d-17ff-b90a-646a68b7af54",
+							uuid = "f2665578-2443-2355-ad4d-1f75000ccf4b",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 171.9,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 21,
-				timerOffset = -6,
-				uuid = "ebd63f04-a1c1-566c-b7ad-2846100977cb",
+				timerOffset = -12,
+				uuid = "21ab6d7e-9b09-bbfb-9c3f-fdc8da3c84ae",
 				version = 2,
 			},
 		},
@@ -1032,12 +1065,12 @@ local tbl =
 							{
 								
 								{
-									"e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+									"6c01e492-d8c1-9752-b2ed-bcf179d10424",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "e1ccadd5-9307-6c4d-8bb0-e92d783e0c2d",
+							uuid = "4116fc88-149e-97fb-a4c0-60c855469dde",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1051,12 +1084,12 @@ local tbl =
 							{
 								
 								{
-									"f57db5be-132d-17ff-b90a-646a68b7af54",
+									"65b652ba-9017-9f05-910b-d77eff7cd5c2",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "6e9df772-3257-9832-8897-6838b2381b11",
+							uuid = "cadc9187-1f28-ad4c-a136-224f8ced4531",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1071,7 +1104,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "e76f5cf2-cbe3-a4dc-a7ef-62e1b14cef06",
+							uuid = "6c01e492-d8c1-9752-b2ed-bcf179d10424",
 							version = 2,
 						},
 					},
@@ -1083,83 +1116,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "f57db5be-132d-17ff-b90a-646a68b7af54",
+							uuid = "65b652ba-9017-9f05-910b-d77eff7cd5c2",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 187.2,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 22,
-				timerOffset = -6,
-				uuid = "556c5cb0-1edd-063d-9a01-683d8f76fbc7",
-				version = 2,
-			},
-		},
-	},
-	[23] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"c8e3f69d-0f0f-db9e-a195-41897b2cf3e5",
-									true,
-								},
-								
-								{
-									"d18adabd-00a3-42f7-bd99-153566c1ee36",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK2_Hotbar_Grit",
-							uuid = "5800b5b0-9d69-7ee1-a9c6-b0bb0b682f2e",
-							variableTogglesType = 2,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 743,
-							category = "Self",
-							uuid = "d18adabd-00a3-42f7-bd99-153566c1ee36",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 4,
-							enmityValue = 99,
-							uuid = "c8e3f69d-0f0f-db9e-a195-41897b2cf3e5",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 187.7,
-				name = "dunzi",
-				timelineIndex = 23,
-				timerOffset = -10,
-				uuid = "af411d2c-9dc1-4ee1-a4ad-ec9770c56a63",
+				timerOffset = -12,
+				uuid = "3ff59bda-845d-a583-8c4d-87029dcf4ab4",
 				version = 2,
 			},
 		},
@@ -1177,45 +1143,16 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "4b127f78-ebca-591f-8117-592f4a57395b",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 202.2,
-				name = "heidun",
-				timelineIndex = 24,
-				timerOffset = -6,
-				uuid = "e8827ccc-401e-65e4-a22f-e77328cdf1c1",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
 							conditions = 
 							{
 								
 								{
-									"5e4f5fee-ac4c-63ef-9659-02c8b0fd83e7",
+									"e75c35ad-6325-acad-bfda-67c1216a75bf",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_OblationSelf",
-							uuid = "f50e4f41-48ed-6009-9073-e65d890da353",
+							uuid = "bcd689fe-4d90-c76d-9685-df4884ff8c01",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1229,12 +1166,12 @@ local tbl =
 							{
 								
 								{
-									"9147f704-ef81-d374-bb6e-5c39846f0142",
+									"c5153d5f-246b-4c3f-a6bf-f44eeb9157e3",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_OblationOT",
-							uuid = "553b31ae-a369-2fa2-b15f-746d55fbe433",
+							uuid = "53129176-a3d4-325a-899a-fc05cec78302",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1249,7 +1186,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "5e4f5fee-ac4c-63ef-9659-02c8b0fd83e7",
+							uuid = "e75c35ad-6325-acad-bfda-67c1216a75bf",
 							version = 2,
 						},
 					},
@@ -1261,16 +1198,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "9147f704-ef81-d374-bb6e-5c39846f0142",
+							uuid = "c5153d5f-246b-4c3f-a6bf-f44eeb9157e3",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 202.2,
-				name = "fengxian1",
+				name = "Oblation 1",
 				timelineIndex = 24,
 				timerOffset = -10,
-				uuid = "f3d611df-53b7-a365-8a5c-1e7d9c26419a",
+				uuid = "89a59a25-ddae-0718-a1d3-7110ab1e10ab",
 				version = 2,
 			},
 		},
@@ -1286,7 +1223,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Tankbar_ShadowWall",
-							uuid = "993d8b90-cf37-6c7f-96d4-43c418e01677",
+							uuid = "01fba74f-2609-3a23-90b8-850a8beb2469",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1296,10 +1233,39 @@ local tbl =
 				{
 				},
 				mechanicTime = 202.2,
-				name = "anyingqiang",
+				name = "Shadow Wall",
 				timelineIndex = 24,
 				timerOffset = -11,
-				uuid = "a6498429-a855-d7ef-9b6f-fb783fd6e924",
+				uuid = "76f73794-e37f-c62e-ab99-aeb99ba2c342",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_DarkMind",
+							uuid = "8872e079-0f38-ac78-b310-6517724198fe",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 202.2,
+				name = "Dark Mind",
+				timelineIndex = 24,
+				timerOffset = -10,
+				uuid = "ebed7a46-6d07-65cf-9d90-a0d79f471c63",
 				version = 2,
 			},
 		},
@@ -1318,12 +1284,12 @@ local tbl =
 							{
 								
 								{
-									"3a45167d-507f-83f7-a150-59e55c56b4ea",
+									"ffdccb1e-598a-9485-bb59-c65abac88551",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_OblationSelf",
-							uuid = "63b1d840-b13e-7a7e-9757-ea563ad4910b",
+							uuid = "8f1a2f45-f4b4-728f-bc9b-378fc461ad65",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1337,12 +1303,12 @@ local tbl =
 							{
 								
 								{
-									"e95ff744-1ba3-31ca-a53a-f35ed6277b5c",
+									"1e5ffc68-1983-eb05-993a-3ec3d0bb435c",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_OblationOT",
-							uuid = "67643d39-bd8f-fa85-be94-8b1f2bc69523",
+							uuid = "fef655d8-f0ae-a30e-b408-cbceddeb1cc9",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1357,7 +1323,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "e95ff744-1ba3-31ca-a53a-f35ed6277b5c",
+							uuid = "1e5ffc68-1983-eb05-993a-3ec3d0bb435c",
 							version = 2,
 						},
 					},
@@ -1369,19 +1335,19 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "3a45167d-507f-83f7-a150-59e55c56b4ea",
+							uuid = "ffdccb1e-598a-9485-bb59-c65abac88551",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 202.2,
-				name = "fengxian2",
+				name = "Oblation reverse",
 				timelineIndex = 24,
 				timerOffset = -10,
-				uuid = "f4fca2c0-ad97-8f44-91a0-a327c411b49c",
+				uuid = "220a70bf-7a27-750c-a926-3ce935fa0ab6",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 6,
 		},
 		
 		{
@@ -1394,8 +1360,8 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_DarkMind",
-							uuid = "2ad05321-3df9-f81a-a7c1-55d654672028",
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
+							uuid = "f2010f15-c65c-103c-8dad-a693ad209a97",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1405,13 +1371,12 @@ local tbl =
 				{
 				},
 				mechanicTime = 202.2,
-				name = "qiantouming",
+				name = "TBN",
 				timelineIndex = 24,
-				timerOffset = -10,
-				uuid = "d5895ca5-352e-2945-a480-1f23dff68872",
+				timerOffset = -6,
+				uuid = "8f477f49-8b16-d4f9-8a1d-ca2ab60fa084",
 				version = 2,
 			},
-			inheritedIndex = 5,
 		},
 	},
 	[25] = 
@@ -1427,8 +1392,8 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
-							uuid = "70a4955c-0f04-8250-ae6c-b217a50c70f0",
+							gVar = "ACR_RikuDRK2_Tankbar_DarkMissionary",
+							uuid = "bfa95dc8-3bfa-e5fb-b673-6d0825154326",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1438,10 +1403,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 212.3,
-				name = "xuechou",
+				name = "Dark Missionary",
 				timelineIndex = 25,
-				timerOffset = -9,
-				uuid = "1b399149-7410-c9dc-9c1c-9354baef6355",
+				timerOffset = -14,
+				uuid = "538edf11-177c-d706-8667-31e3670ccbaa",
 				version = 2,
 			},
 		},
@@ -1463,12 +1428,12 @@ local tbl =
 							{
 								
 								{
-									"9356ad8b-e412-381d-9a4b-aa7c4563fb18",
+									"0cf8a358-a286-5d13-bcfd-1996633b35a3",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "d03487a3-1c10-312c-9754-15744800a715",
+							uuid = "3605573f-d920-5443-ab04-2daa0a7e1b37",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1482,12 +1447,12 @@ local tbl =
 							{
 								
 								{
-									"c850a4a5-4cde-cb33-a0fc-b35f0940c5a5",
+									"96c58054-9d7c-1010-a7a2-e92b9bccb1c4",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "5dfb9da7-3d5d-b5a9-a968-f99edb808e08",
+							uuid = "0a74277f-4813-663f-bb8b-2526a3794704",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1502,7 +1467,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "9356ad8b-e412-381d-9a4b-aa7c4563fb18",
+							uuid = "0cf8a358-a286-5d13-bcfd-1996633b35a3",
 							version = 2,
 						},
 					},
@@ -1514,16 +1479,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "c850a4a5-4cde-cb33-a0fc-b35f0940c5a5",
+							uuid = "96c58054-9d7c-1010-a7a2-e92b9bccb1c4",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 228.9,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 27,
 				timerOffset = -6,
-				uuid = "82329fda-bfe7-ffcf-a909-d6a663dcd43a",
+				uuid = "94497637-d397-9514-a9fb-5749bce45f6c",
 				version = 2,
 			},
 		},
@@ -1538,8 +1503,8 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_DarkMissionary",
-							uuid = "6614e9ae-ef95-6464-8a14-93f1b5871617",
+							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							uuid = "9d67b632-8588-a8a3-9302-031059fc9d5e",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1549,57 +1514,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 228.9,
-				name = "budao",
+				name = "Reprisal",
 				timelineIndex = 27,
-				timerOffset = -14,
-				uuid = "670084e1-ae00-9459-ac10-6b94cf6bc078",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"a765edd1-baff-bcc7-a886-5ac4942133d4",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK2_Hotbar_ShirkOT",
-							uuid = "38861fd0-57a6-9328-bc86-a3c790188181",
-							variableTogglesType = 2,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 4,
-							enmityValue = 99,
-							uuid = "a765edd1-baff-bcc7-a886-5ac4942133d4",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 228.9,
-				name = "fangzhi mt shabi",
-				timelineIndex = 27,
-				uuid = "815e4164-b327-d4b1-a96c-5fd483307b82",
+				timerOffset = -9,
+				uuid = "0aa45c00-624c-a1c7-88d3-6a44fd7393e1",
 				version = 2,
 			},
 		},
@@ -1618,7 +1536,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Hotbar_ArmsLength",
-							uuid = "844396fe-848f-935a-ab63-210d3f548e77",
+							uuid = "254b5565-caca-e2b6-86d0-a98a2366502a",
 							variableTogglesType = 2,
 							version = 2,
 						},
@@ -1628,10 +1546,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 246.4,
-				name = "fangjitui",
+				name = "Knockback",
 				timelineIndex = 28,
 				timerOffset = -5,
-				uuid = "101a8bff-5a0e-f75c-ae87-7ac02938495f",
+				uuid = "758f5c72-07a7-63cc-8315-a8df080358e0",
 				version = 2,
 			},
 		},
@@ -1650,7 +1568,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Hotbar_Sprint",
-							uuid = "95a5ca42-eb89-6128-af5f-86a167237030",
+							uuid = "4ab35b3a-a7b1-bb3b-bafc-26df9cb8f955",
 							variableTogglesType = 2,
 							version = 2,
 						},
@@ -1660,15 +1578,15 @@ local tbl =
 				{
 				},
 				mechanicTime = 259.7,
-				name = "jipao",
+				name = "Tank Sprint",
 				timelineIndex = 31,
 				timerOffset = -12.5,
-				uuid = "e47766fa-2a39-3df3-9745-af79c73ea9c8",
+				uuid = "ffd25ef6-aa95-22bb-bb6e-607015ae6f4f",
 				version = 2,
 			},
 		},
 	},
-	[38] = 
+	[37] = 
 	{
 		
 		{
@@ -1681,16 +1599,8 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"ea9b2bce-41ca-3378-a3bb-015cc224983e",
-									true,
-								},
-							},
 							gVar = "ACR_RikuDRK2_Hotbar_ShirkOT",
-							uuid = "d4a6ff71-7f16-8984-8abb-2864357e1882",
+							uuid = "4c585e4c-2ec1-b6cb-b390-e3c34e4e8c6a",
 							variableTogglesType = 2,
 							version = 2,
 						},
@@ -1698,55 +1608,13 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 4,
-							enmityValue = 99,
-							uuid = "ea9b2bce-41ca-3378-a3bb-015cc224983e",
-							version = 2,
-						},
-					},
 				},
-				mechanicTime = 281.7,
+				mechanicTime = 269.9,
 				name = "tuibi",
-				timelineIndex = 38,
-				timerOffset = 5,
-				uuid = "bea08765-1c74-f0da-b253-4de76d29c398",
+				timelineIndex = 37,
+				uuid = "c3555f93-17f6-873e-b1b6-e1d217772e51",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightMT",
-							uuid = "71541469-aeb1-c766-8799-050c58a44039",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 281.7,
-				name = "heidun",
-				timelineIndex = 38,
-				timerOffset = -6,
-				uuid = "d7f1b469-ad39-bef9-81ac-ad10d22c6f03",
-				version = 2,
-			},
-			inheritedIndex = 2,
 		},
 	},
 	[39] = 
@@ -1762,8 +1630,8 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightMT",
-							uuid = "71541469-aeb1-c766-8799-050c58a44039",
+							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							uuid = "6586838d-5d6b-9c86-906c-47f674a6efe8",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1773,13 +1641,119 @@ local tbl =
 				{
 				},
 				mechanicTime = 290.8,
-				name = "heidun",
+				name = "Reprisal",
 				timelineIndex = 39,
-				timerOffset = -6,
-				uuid = "4b525628-a993-d9ba-812b-88ce15c3c8af",
+				timerOffset = -9,
+				uuid = "2ee6306a-8001-6703-8370-8a40271ae534",
 				version = 2,
 			},
-			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"e0d2d106-42e5-8c99-a4be-133e0c8c21e0",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
+							uuid = "71e7e491-c503-5ebd-9f6e-5ea6e5cc07f5",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"e4895e5b-828f-6910-beef-b27ea42b8740",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
+							uuid = "afd2fad5-5e18-bf66-8992-d25ea687086c",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 4,
+							enmityValue = 100,
+							name = "MT Enmity",
+							uuid = "e0d2d106-42e5-8c99-a4be-133e0c8c21e0",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							name = "Off Tank Enmity",
+							uuid = "e4895e5b-828f-6910-beef-b27ea42b8740",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 290.8,
+				name = "TBN",
+				timelineIndex = 39,
+				timerOffset = -4,
+				uuid = "18f47403-64fe-8b05-84d5-bfa0e0c34aca",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Hotbar_Provoke",
+							uuid = "04a92b78-7716-aa63-93dc-4491e27a3345",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 290.8,
+				name = "tiaoxin",
+				timelineIndex = 39,
+				uuid = "242f2825-3b62-33f2-9042-e4ef8894d681",
+				version = 2,
+			},
 		},
 	},
 	[45] = 
@@ -1856,45 +1830,13 @@ local tbl =
 					},
 				},
 				mechanicTime = 320.2,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 45,
 				timerOffset = -4,
-				uuid = "4ef3d530-7fe4-e603-b8a8-2259f75629c0",
+				uuid = "2df8c7c0-b454-0f32-8805-f6ec740be234",
 				version = 2,
 			},
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
-							uuid = "db10dc0e-9ae2-9d3e-9240-31c091d581b3",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 320.2,
-				name = "xuechou",
-				timelineIndex = 45,
-				timerOffset = -9,
-				uuid = "fad22529-fda2-7404-9d0e-c2f2c8deba39",
-				version = 2,
-			},
-		},
-	},
-	[49] = 
-	{
 		
 		{
 			data = 
@@ -1907,7 +1849,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Tankbar_DarkMissionary",
-							uuid = "c4c3dfd7-94ef-0e7e-b4d9-821b969eda0c",
+							uuid = "d8e0ab88-0d38-86b8-b343-5c9ac0686ab5",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1916,11 +1858,11 @@ local tbl =
 				conditions = 
 				{
 				},
-				mechanicTime = 335.2,
-				name = "budao",
-				timelineIndex = 49,
+				mechanicTime = 320.2,
+				name = "Dark Missionary",
+				timelineIndex = 45,
 				timerOffset = -15,
-				uuid = "914377d0-a2e0-0f63-af11-da430921cce1",
+				uuid = "8bfa623c-c559-9b95-9291-40a997d86727",
 				version = 2,
 			},
 		},
@@ -1949,10 +1891,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 345.2,
-				name = "jipao",
+				name = "Tank Sprint",
 				timelineIndex = 50,
 				timerOffset = -11,
-				uuid = "0b0bb902-a803-ef69-b0f5-384dec13a103",
+				uuid = "bf676d64-072f-de69-b5e3-953c7cc72461",
 				version = 2,
 			},
 		},
@@ -1974,12 +1916,12 @@ local tbl =
 							{
 								
 								{
-									"e3b7e648-9585-2017-8ce4-9d47599c6f9a",
+									"664271f0-afd0-9827-ad9d-638612a0184b",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "f64b0f9e-9b1a-7cdc-b6a4-022f4fab78f7",
+							uuid = "b39d5cac-0352-7278-a2a9-733f56f0740e",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -1993,12 +1935,12 @@ local tbl =
 							{
 								
 								{
-									"1798aa3c-ecf1-2af6-8f19-c1a5005c1b26",
+									"d528ac2e-969e-2037-aaac-1e9e9eae8f24",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "1d48b134-da3b-1567-9a64-b132eb3ab8d4",
+							uuid = "17ea30de-a348-b1a0-9be8-3e45a6149657",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2013,7 +1955,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "e3b7e648-9585-2017-8ce4-9d47599c6f9a",
+							uuid = "664271f0-afd0-9827-ad9d-638612a0184b",
 							version = 2,
 						},
 					},
@@ -2025,21 +1967,21 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "1798aa3c-ecf1-2af6-8f19-c1a5005c1b26",
+							uuid = "d528ac2e-969e-2037-aaac-1e9e9eae8f24",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 357.9,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 51,
 				timerOffset = -10.5,
-				uuid = "1a414a2f-66e6-baf0-8e04-0f5cbac4d9e8",
+				uuid = "8412e5b3-f15e-f1f9-947c-4ac88c648141",
 				version = 2,
 			},
 		},
 	},
-	[52] = 
+	[59] = 
 	{
 		
 		{
@@ -2056,13 +1998,32 @@ local tbl =
 							{
 								
 								{
-									"ea9b2bce-41ca-3378-a3bb-015cc224983e",
+									"64425115-c723-003c-ae7f-75b4b9f70416",
 									true,
 								},
 							},
-							gVar = "ACR_RikuDRK2_Hotbar_ShirkOT",
-							uuid = "d4a6ff71-7f16-8984-8abb-2864357e1882",
-							variableTogglesType = 2,
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
+							uuid = "2af7e4e7-9753-a9d7-94aa-58428c6acc7b",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"0daf31c5-ec37-94d1-a2f4-6d04c2ad2d54",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
+							uuid = "93f8c5f6-dc12-5a71-b4a9-b3913bb343cd",
+							variableTogglesType = 3,
 							version = 2,
 						},
 					},
@@ -2073,18 +2034,31 @@ local tbl =
 					{
 						data = 
 						{
+							conditionType = 4,
+							enmityValue = 100,
+							name = "MT Enmity",
+							uuid = "64425115-c723-003c-ae7f-75b4b9f70416",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
 							comparator = 2,
 							conditionType = 4,
 							enmityValue = 99,
-							uuid = "ea9b2bce-41ca-3378-a3bb-015cc224983e",
+							name = "Off Tank Enmity",
+							uuid = "0daf31c5-ec37-94d1-a2f4-6d04c2ad2d54",
 							version = 2,
 						},
 					},
 				},
-				mechanicTime = 364.4,
-				name = "tuibi",
-				timelineIndex = 52,
-				uuid = "ad6d8bdd-80ac-639b-9057-64a2ec9f0ab5",
+				mechanicTime = 402.6,
+				name = "TBN",
+				timelineIndex = 59,
+				timerOffset = -11.5,
+				uuid = "47a831c5-ae49-8088-800d-b9b0b0f5d606",
 				version = 2,
 			},
 		},
@@ -2112,10 +2086,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 438.5,
-				name = "NO JUMP!",
+				name = "Tank Hold Jumps",
 				timelineIndex = 69,
 				timerOffset = -5,
-				uuid = "403fe118-556b-a556-97d9-16700edc0650",
+				uuid = "c0ba0ab1-5404-b1d7-bfb2-cabf15e65942",
 				version = 2,
 			},
 		},
@@ -2133,8 +2107,8 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_DarkMind",
-							uuid = "455928f5-62dc-5d30-aebd-3d66dcdbc8a7",
+							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							uuid = "37dc5954-b25a-d729-b47b-bfe4aef1894a",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2144,10 +2118,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 441.1,
-				name = "qiantouming",
+				name = "Reprisal",
 				timelineIndex = 70,
-				timerOffset = -10,
-				uuid = "1874eca2-76ff-c42f-8c51-650569fbbcfa",
+				timerOffset = -9,
+				uuid = "7bac77b1-5ccb-25e4-8198-d81b47e48b7c",
 				version = 2,
 			},
 		},
@@ -2162,35 +2136,8 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"3f9fd62a-35b8-a38f-be5b-d673d41af944",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "23f4006e-65a6-e774-8920-0bafc1486a89",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"f3b161b4-7221-83f6-8512-02bcf58e71b6",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "49eaa9dd-7084-a598-8a2f-437341aa33b5",
+							gVar = "ACR_RikuDRK2_Tankbar_ShadowWall",
+							uuid = "970c70a9-cb2e-32f6-995d-e360019e7c7a",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2198,41 +2145,41 @@ local tbl =
 				},
 				conditions = 
 				{
+				},
+				mechanicTime = 441.1,
+				name = "Shadow Wall",
+				timelineIndex = 70,
+				timerOffset = -14,
+				uuid = "5d401bfe-5374-f376-af57-315b462e2dd0",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
 					
 					{
 						data = 
 						{
-							category = "Party",
-							conditionType = 4,
-							inRangeValue = 5,
-							name = "Check For Party",
-							partyTargetNumber = 4,
-							partyTargetSubType = "Number",
-							uuid = "3f9fd62a-35b8-a38f-be5b-d673d41af944",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 5,
-							name = "Tether party check",
-							partyTargetNumber = 4,
-							partyTargetSubType = "Number",
-							uuid = "f3b161b4-7221-83f6-8512-02bcf58e71b6",
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_DarkMind",
+							uuid = "c5c9d59f-50cc-57ab-8ed8-420a1c5b5312",
+							variableTogglesType = 3,
 							version = 2,
 						},
 					},
 				},
+				conditions = 
+				{
+				},
 				mechanicTime = 441.1,
-				name = "heidun",
+				name = "Dark Mind",
 				timelineIndex = 70,
-				timerOffset = -4,
-				uuid = "d0e9a5a8-dfb0-b020-a931-a9d3636cf3f6",
+				timerOffset = -10,
+				uuid = "1103dbb5-e519-6443-87ff-9a3edf14658f",
 				version = 2,
 			},
 		},
@@ -2258,10 +2205,124 @@ local tbl =
 				{
 				},
 				mechanicTime = 441.1,
-				name = "jipao",
+				name = "Tank Sprint",
 				timelineIndex = 70,
 				timerOffset = -11,
-				uuid = "7c1ce608-654f-4dbe-81a5-961bed34f692",
+				uuid = "08415387-25e9-b199-81b0-5ebe2215b74f",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"3ae60fc0-c88c-5b28-90f0-a35e79d9c61a",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
+							uuid = "2df302e8-bb5d-4674-a768-89eea56d861e",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"302da933-a946-9899-8633-2c2ef91b6769",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
+							uuid = "a140a7d6-c3b4-3d58-9aed-b586d6b2148a",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							conditionType = 4,
+							inRangeValue = 5,
+							name = "Check For Party",
+							partyTargetNumber = 4,
+							partyTargetSubType = "Number",
+							uuid = "3ae60fc0-c88c-5b28-90f0-a35e79d9c61a",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 5,
+							name = "Tether party check",
+							partyTargetNumber = 4,
+							partyTargetSubType = "Number",
+							uuid = "302da933-a946-9899-8633-2c2ef91b6769",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 441.1,
+				name = "TBN",
+				timelineIndex = 70,
+				timerOffset = -4,
+				uuid = "29a47b7a-e533-06f5-80b6-0fa04c32ff45",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_Rampart",
+							uuid = "5184b463-b67c-4ca5-b20f-20697b665550",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 441.1,
+				name = "Rampart",
+				timelineIndex = 70,
+				timerOffset = -19,
+				uuid = "1b18d533-6198-ae81-a471-8ebad6484648",
 				version = 2,
 			},
 		},
@@ -2287,10 +2348,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 441.1,
-				name = "fengxian",
+				name = "Oblation 1",
 				timelineIndex = 70,
 				timerOffset = -10,
-				uuid = "7354422c-62c8-6982-b09f-e02d77693de4",
+				uuid = "bbe30090-5ded-d7bb-913d-c81ccf0acd89",
 				version = 2,
 			},
 		},
@@ -2308,85 +2369,16 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_Rampart",
-							uuid = "ebbbd3f8-249c-548d-b8f5-72fcbe7e6de0",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 453.4,
-				name = "tiebi",
-				timelineIndex = 72,
-				timerOffset = -19,
-				uuid = "586821a8-cbd0-5695-8658-7c2bd36f1632",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_ShadowWall",
-							uuid = "5309b84e-d3f1-bf9f-8f11-00b238deea9a",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 453.4,
-				name = "anyingqiang",
-				timelineIndex = 72,
-				timerOffset = -15,
-				uuid = "374b3380-fb48-bfba-97b0-750d0ab0c64a",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_OblationSelf",
-							uuid = "9415b755-5211-7e68-9565-cd5cb537bd8a",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "Variable",
 							conditions = 
 							{
 								
 								{
-									"4922e490-f22c-b832-9dbd-6cb21a975e3f",
+									"cd20bdf6-576f-d708-8bc2-a24bfce822cf",
 									true,
 								},
 							},
-							gVar = "ACR_RikuDRK2_Tankbar_OblationOT",
-							uuid = "eabb22cf-0d76-f774-82d2-ec9308585da5",
+							gVar = "ACR_RikuDRK2_Tankbar_LivingDead",
+							uuid = "a879f262-c758-7320-8574-832706b73513",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2400,29 +2392,17 @@ local tbl =
 						{
 							conditionType = 4,
 							enmityValue = 100,
-							name = "MT Enmity",
-							uuid = "16d471d7-d42e-8aec-ac87-adfa9eb448ee",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 4,
-							enmityValue = 99,
-							name = "Off Tank Enmity",
-							uuid = "4922e490-f22c-b832-9dbd-6cb21a975e3f",
+							name = "MT enmity",
+							uuid = "cd20bdf6-576f-d708-8bc2-a24bfce822cf",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 453.4,
-				name = "fengxian",
+				name = "Living Dead",
 				timelineIndex = 72,
-				timerOffset = -10,
-				uuid = "05edf1b2-4a37-37dd-b1f7-f88830c030df",
+				timerOffset = -9,
+				uuid = "142cb594-11ad-093b-88cd-7eb8573af116",
 				version = 2,
 			},
 		},
@@ -2444,12 +2424,12 @@ local tbl =
 							{
 								
 								{
-									"8827fc03-d814-a829-bd85-19d55e7a2bc3",
+									"5101d658-7c6f-f0ac-b46d-1f2ee76c872a",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "e6e666e4-0163-020f-b2f5-6e50cd06f0e7",
+							uuid = "348f6650-fda3-904f-821d-b44433864f36",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2463,12 +2443,12 @@ local tbl =
 							{
 								
 								{
-									"066ebe7b-d5f0-3f39-a3f2-d27db564c439",
+									"9c995947-3e7c-edba-8357-ee19de472984",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "5aef6e44-f2e8-da4c-932c-bc7f2cbed601",
+							uuid = "b4ddb09b-aea9-5bea-9568-8dc20db2fe88",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2483,7 +2463,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "8827fc03-d814-a829-bd85-19d55e7a2bc3",
+							uuid = "5101d658-7c6f-f0ac-b46d-1f2ee76c872a",
 							version = 2,
 						},
 					},
@@ -2495,45 +2475,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "066ebe7b-d5f0-3f39-a3f2-d27db564c439",
+							uuid = "9c995947-3e7c-edba-8357-ee19de472984",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 461.5,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 73,
 				timerOffset = -4,
-				uuid = "b1987a75-e391-6282-bab7-8d670201d778",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
-							uuid = "db10dc0e-9ae2-9d3e-9240-31c091d581b3",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 461.5,
-				name = "xuechou",
-				timelineIndex = 73,
-				timerOffset = -9,
-				uuid = "00beb92e-8391-4fa5-9433-e24deeaa6fda",
+				uuid = "a8aa6d7d-ff5c-a808-8c7f-bcda6fa808d2",
 				version = 2,
 			},
 		},
@@ -2555,12 +2506,12 @@ local tbl =
 							{
 								
 								{
-									"c8904da6-5305-5a12-9e87-0fa338641fb2",
+									"036e7589-e8ee-312d-882b-dc1d4af39383",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "272c2ece-699e-3db9-9952-064c850b7883",
+							uuid = "739b750a-b269-a9da-a21a-3fca50bc9a25",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2574,12 +2525,12 @@ local tbl =
 							{
 								
 								{
-									"39f233d3-ba31-d6c9-acab-3173906903e1",
+									"ed724473-0544-7c47-856a-f8ce098efbdc",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "6c50d4d9-eb60-1482-b7d7-e1b847acdb5a",
+							uuid = "ea45a20e-93ab-73f0-be17-b83843c1fb9a",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2594,7 +2545,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "c8904da6-5305-5a12-9e87-0fa338641fb2",
+							uuid = "036e7589-e8ee-312d-882b-dc1d4af39383",
 							version = 2,
 						},
 					},
@@ -2606,45 +2557,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "39f233d3-ba31-d6c9-acab-3173906903e1",
+							uuid = "ed724473-0544-7c47-856a-f8ce098efbdc",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 479.2,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 75,
 				timerOffset = -4,
-				uuid = "d6443f5d-d68b-9ee1-a74a-0125f7c3a683",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_DarkMissionary",
-							uuid = "c4c3dfd7-94ef-0e7e-b4d9-821b969eda0c",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 479.2,
-				name = "anheibudao",
-				timelineIndex = 75,
-				timerOffset = -15,
-				uuid = "53fc6f7d-560a-fdd3-a6ac-979d134522f9",
+				uuid = "523f9766-4f5b-0af2-8f6a-90d86fa5342a",
 				version = 2,
 			},
 		},
@@ -2672,10 +2594,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 514.2,
-				name = "NO JUMP!",
+				name = "Tank Hold Jumps",
 				timelineIndex = 81,
 				timerOffset = -5,
-				uuid = "85e7c960-c388-77ce-84b4-bce9d6d4fbdc",
+				uuid = "1427131f-f38e-23f8-ba0b-4ab14fb596e0",
 				version = 2,
 			},
 		},
@@ -2694,7 +2616,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
-							uuid = "73ced2bc-fd3d-b0f2-be5f-b76068d7caea",
+							uuid = "35ac3eaa-98d5-3dde-bd84-f5a5c6acab1d",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2704,10 +2626,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 516.6,
-				name = "xuechou",
+				name = "Reprisal",
 				timelineIndex = 82,
 				timerOffset = -10,
-				uuid = "0a04eeb0-576d-8bf9-852c-f07db2b86ed2",
+				uuid = "de7784e9-ea9c-52d3-92fe-c8265067210e",
 				version = 2,
 			},
 		},
@@ -2723,7 +2645,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Tankbar_DarkMissionary",
-							uuid = "a2e5363c-230c-b9c9-8923-d4d043cd9d39",
+							uuid = "e600909d-6d90-b803-ba0c-d5a85af7e679",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2733,10 +2655,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 516.6,
-				name = "anheibudao",
+				name = "Dark Missionary",
 				timelineIndex = 82,
 				timerOffset = -15,
-				uuid = "cf916ee4-0cb2-8a69-9cab-8245a23afa9f",
+				uuid = "df447c02-6d00-8d5a-b99e-3928328f7adf",
 				version = 2,
 			},
 		},
@@ -2752,7 +2674,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Tankbar_DarkMind",
-							uuid = "8a213c2f-3fe4-a373-822e-0514764c3092",
+							uuid = "05698acb-2d45-fa7e-9f4c-2c4aa8cbfc10",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2762,94 +2684,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 516.6,
-				name = "qiantouming",
+				name = "Dark Mind",
 				timelineIndex = 82,
 				timerOffset = -10,
-				uuid = "f832b27b-469b-bb2f-bd50-9e2f305ea282",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"23c9b1bb-8c1c-6d40-8252-6adedef6eb7e",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "42a66a64-aae6-099d-8bbb-74f720e0edbb",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"abf281a4-e65c-87c8-9a0e-b905f35d158c",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "a6e4e12d-aed7-9dea-8b5a-eb794262d52a",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 8,
-							name = "Check For Party",
-							partyTargetSubType = "Number",
-							uuid = "abf281a4-e65c-87c8-9a0e-b905f35d158c",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Party",
-							conditionType = 4,
-							inRangeValue = 8,
-							name = "Tether party check",
-							partyTargetNumber = 6,
-							partyTargetSubType = "Number",
-							uuid = "23c9b1bb-8c1c-6d40-8252-6adedef6eb7e",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 516.6,
-				name = "heidun",
-				timelineIndex = 82,
-				timerOffset = -4,
-				uuid = "f6a234cd-1562-86f6-b657-0eb8e147014a",
+				uuid = "60167471-c615-df4d-8183-3894a16fd1a8",
 				version = 2,
 			},
 		},
@@ -2875,10 +2713,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 516.6,
-				name = "jipao",
+				name = "Tank Sprint",
 				timelineIndex = 82,
 				timerOffset = -11,
-				uuid = "c62fbecb-e58f-c186-a3e7-41cbdf4374b6",
+				uuid = "3aa07bb3-57b0-92c9-ae69-3c6cb736e844",
 				version = 2,
 			},
 		},
@@ -2893,8 +2731,16 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_OblationSelf",
-							uuid = "9415b755-5211-7e68-9565-cd5cb537bd8a",
+							conditions = 
+							{
+								
+								{
+									"ff4f30d4-5ccb-358f-8add-cd76d1b7568a",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
+							uuid = "f4155e71-3c36-b770-bb98-ece51c1babcc",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2908,12 +2754,12 @@ local tbl =
 							{
 								
 								{
-									"4922e490-f22c-b832-9dbd-6cb21a975e3f",
+									"80945441-3ee5-57c5-95cb-f8da0105d680",
 									true,
 								},
 							},
-							gVar = "ACR_RikuDRK2_Tankbar_OblationOT",
-							uuid = "eabb22cf-0d76-f774-82d2-ec9308585da5",
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
+							uuid = "95b1464e-2b0d-7f26-ae7a-7ed2cbad309c",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -2925,10 +2771,13 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Party",
+							comparator = 2,
 							conditionType = 4,
-							enmityValue = 100,
-							name = "MT Enmity",
-							uuid = "16d471d7-d42e-8aec-ac87-adfa9eb448ee",
+							inRangeValue = 8,
+							name = "Check For Party",
+							partyTargetSubType = "Number",
+							uuid = "80945441-3ee5-57c5-95cb-f8da0105d680",
 							version = 2,
 						},
 					},
@@ -2936,20 +2785,107 @@ local tbl =
 					{
 						data = 
 						{
-							comparator = 2,
+							category = "Party",
 							conditionType = 4,
-							enmityValue = 99,
-							name = "Off Tank Enmity",
-							uuid = "4922e490-f22c-b832-9dbd-6cb21a975e3f",
+							inRangeValue = 8,
+							name = "Tether party check",
+							partyTargetNumber = 6,
+							partyTargetSubType = "Number",
+							uuid = "ff4f30d4-5ccb-358f-8add-cd76d1b7568a",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 516.6,
-				name = "fengxian",
+				name = "TBN",
+				timelineIndex = 82,
+				timerOffset = -4,
+				uuid = "35fc7fe7-a805-7d57-80a1-897db5cce674",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"309a06b6-4888-a503-84e3-1fc229f6e3e5",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_OblationOT",
+							uuid = "2f347979-4d33-bb17-b34e-fa2d4cb6de83",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"56abf167-c6f2-8dcc-847d-53ec86c9cfe1",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_OblationSelf",
+							uuid = "8657d69f-9668-930c-8ff6-d12e5f87ea76",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 5,
+							name = "Check For Party",
+							partyTargetNumber = 4,
+							partyTargetSubType = "Number",
+							uuid = "309a06b6-4888-a503-84e3-1fc229f6e3e5",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Party",
+							conditionType = 4,
+							inRangeValue = 5,
+							name = "Tether party check",
+							partyTargetNumber = 4,
+							partyTargetSubType = "Number",
+							uuid = "56abf167-c6f2-8dcc-847d-53ec86c9cfe1",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 516.6,
+				name = "Oblation 1",
 				timelineIndex = 82,
 				timerOffset = -10,
-				uuid = "1c02332b-9558-a5a2-bca4-534ca49bb80d",
+				uuid = "7cdef669-b811-2cee-a859-fbdbb2e3734e",
 				version = 2,
 			},
 		},
@@ -2971,59 +2907,12 @@ local tbl =
 							{
 								
 								{
-									"3d1e1af6-4092-681a-838b-e8bae0a172e8",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK2_Hotbar_ShirkOT",
-							uuid = "3c05c9bc-b4d0-4648-b813-c18a0a927dca",
-							variableTogglesType = 2,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 4,
-							enmityValue = 99,
-							uuid = "3d1e1af6-4092-681a-838b-e8bae0a172e8",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 538.8,
-				name = "tuibi",
-				timelineIndex = 86,
-				uuid = "1c3b005f-8a11-2fbf-a8fe-3fb60c9b7051",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"13e7c628-0793-db54-ad0e-8c15dddca560",
+									"89f06614-df13-7f65-91a9-b507f586f5f0",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "20963fb6-59f7-8f13-ba95-c71d05c743a6",
+							uuid = "f936ef93-6b27-01fe-8a7f-0b6cc3c40ba2",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3037,12 +2926,12 @@ local tbl =
 							{
 								
 								{
-									"1002dc36-420a-1df1-91d3-26f83b950f03",
+									"03e8372d-4524-a31d-9b62-3ff259a3eae4",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "8d9e7b8b-a36c-4987-8b9a-49ce8ae1214c",
+							uuid = "67759ff9-d00c-8c10-beb8-e77b9c153bdd",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3057,7 +2946,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "13e7c628-0793-db54-ad0e-8c15dddca560",
+							uuid = "89f06614-df13-7f65-91a9-b507f586f5f0",
 							version = 2,
 						},
 					},
@@ -3069,16 +2958,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "1002dc36-420a-1df1-91d3-26f83b950f03",
+							uuid = "03e8372d-4524-a31d-9b62-3ff259a3eae4",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 538.8,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 86,
 				timerOffset = -10.5,
-				uuid = "58d35834-a595-6a72-97dd-9029bf260df9",
+				uuid = "c448be5f-7e61-4657-bff1-a100a7f1f6e2",
 				version = 2,
 			},
 		},
@@ -3100,12 +2989,12 @@ local tbl =
 							{
 								
 								{
-									"66bce38b-5bb6-eb59-ab55-69b3dc4b97f3",
+									"2bfa6593-4d49-5b4b-827a-75805a2d6ff1",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "a100771e-005a-d311-9ffa-c973acf7dd41",
+							uuid = "bb19a16f-612f-ee18-85a2-2f9d83a0e026",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3119,12 +3008,12 @@ local tbl =
 							{
 								
 								{
-									"93f12f48-aac0-5a1f-bd15-e3b73dc050ca",
+									"34075002-803c-3504-8e9d-cfef9c563e6e",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "36199462-6288-90c8-8574-6bb86b772e63",
+							uuid = "dc30fdc8-1d10-0215-bc2a-fd10486efd09",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3139,7 +3028,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "66bce38b-5bb6-eb59-ab55-69b3dc4b97f3",
+							uuid = "2bfa6593-4d49-5b4b-827a-75805a2d6ff1",
 							version = 2,
 						},
 					},
@@ -3151,16 +3040,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "93f12f48-aac0-5a1f-bd15-e3b73dc050ca",
+							uuid = "34075002-803c-3504-8e9d-cfef9c563e6e",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 555.9,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 89,
 				timerOffset = -3,
-				uuid = "ff67efa3-5eb9-6322-b0e1-306aee491d93",
+				uuid = "b120df37-8098-1191-b37c-2c05e613b310",
 				version = 2,
 			},
 		},
@@ -3179,7 +3068,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Hotbar_ArmsLength",
-							uuid = "4f8e7efb-caa5-3cbf-9c0f-5ca159496ba5",
+							uuid = "4e94c94e-1c1b-d0d6-84f0-ff9029b1cd8f",
 							variableTogglesType = 2,
 							version = 2,
 						},
@@ -3189,94 +3078,13 @@ local tbl =
 				{
 				},
 				mechanicTime = 573.9,
-				name = "fangjitui",
+				name = "Knockback",
 				timelineIndex = 94,
 				timerOffset = -5,
-				uuid = "637950bb-7493-937a-bc83-ac558c2e6cc2",
+				uuid = "5acbe131-de53-645c-911b-00e0ab41890a",
 				version = 2,
 			},
-		},
-	},
-	[95] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"9d6c5f85-85d6-05dc-8e4e-408aac4fc12b",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "e7da78ee-5be2-7703-a8d2-4532a5fc247d",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"66ced020-915f-2685-a2c7-94f5eaad1654",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "7401cb17-5aa8-ccc5-9b53-568c6f36bb2a",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							conditionType = 4,
-							enmityValue = 100,
-							name = "MT Enmity",
-							uuid = "9d6c5f85-85d6-05dc-8e4e-408aac4fc12b",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 4,
-							enmityValue = 99,
-							name = "Off Tank Enmity",
-							uuid = "66ced020-915f-2685-a2c7-94f5eaad1654",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 577.9,
-				name = "heidun",
-				timelineIndex = 95,
-				timerOffset = -6,
-				uuid = "f717bb0e-92e7-019e-9e56-89fc42c143f4",
-				version = 2,
-			},
+			inheritedIndex = 1,
 		},
 	},
 	[96] = 
@@ -3296,12 +3104,12 @@ local tbl =
 							{
 								
 								{
-									"04cb892e-4d2a-f53f-a29c-27a8e7b4e1be",
+									"bdbe6ff4-88de-af85-b395-4383953efd1b",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_OblationSelf",
-							uuid = "a5880821-7019-c174-a7e5-dfb6e89b616a",
+							uuid = "63c6ddec-4e1a-370f-b8d5-af3ccbec8344",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3315,12 +3123,12 @@ local tbl =
 							{
 								
 								{
-									"5b82e0a1-c5b6-7e73-81ea-2caf3bf6e43e",
+									"875efbb5-533f-3d73-9b84-df344d46f4c0",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_OblationOT",
-							uuid = "3dde50db-ee03-88aa-a234-f7348ab4d6c8",
+							uuid = "190a3808-eee5-1e4c-bff9-fde87b1c318c",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3335,7 +3143,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "04cb892e-4d2a-f53f-a29c-27a8e7b4e1be",
+							uuid = "bdbe6ff4-88de-af85-b395-4383953efd1b",
 							version = 2,
 						},
 					},
@@ -3347,16 +3155,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "5b82e0a1-c5b6-7e73-81ea-2caf3bf6e43e",
+							uuid = "875efbb5-533f-3d73-9b84-df344d46f4c0",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 588.3,
-				name = "fengxian",
+				name = "Oblation 1",
 				timelineIndex = 96,
 				timerOffset = -10,
-				uuid = "a0390035-079d-087f-a3c3-64991073bbe0",
+				uuid = "d8441922-9d9f-0686-b172-2eade8e6f6ff",
 				version = 2,
 			},
 		},
@@ -3372,7 +3180,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Tankbar_ShadowWall",
-							uuid = "46054567-2a81-d495-a4cd-97aafa0ba885",
+							uuid = "d1bdb219-455a-6469-bdb6-1a297afd51fd",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3382,10 +3190,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 588.3,
-				name = "anyingqiang",
+				name = "Shadow Wall",
 				timelineIndex = 96,
 				timerOffset = -14,
-				uuid = "e0c5b05d-e699-2ec9-a430-7bdf726f7246",
+				uuid = "a5aba97b-29fc-da33-8407-7ad6ca8c78ca",
 				version = 2,
 			},
 		},
@@ -3401,7 +3209,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Tankbar_DarkMind",
-							uuid = "f7162ae5-cb4f-f70a-869e-4927ad62f28d",
+							uuid = "ee5aee8b-f8a6-9511-b66b-72b8be914ff1",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3411,10 +3219,168 @@ local tbl =
 				{
 				},
 				mechanicTime = 588.3,
-				name = "qiantouming",
+				name = "Dark Mind",
 				timelineIndex = 96,
 				timerOffset = -10,
-				uuid = "178e7e0f-272d-ab88-8092-13f99f525e5b",
+				uuid = "46ac5782-8958-089b-9331-049c5af190c5",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"46b100d5-9e73-8b92-a9cf-31e6f3c1efdc",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
+							uuid = "0d302cdf-6766-6c2f-847d-115dcec4fb22",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"1e2f81a5-fd34-87b6-900b-3706666a72e0",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
+							uuid = "b38f0cf5-e8ce-6bbb-8431-a6b4d17c9943",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 4,
+							enmityValue = 100,
+							name = "MT Enmity",
+							uuid = "46b100d5-9e73-8b92-a9cf-31e6f3c1efdc",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							name = "Off Tank Enmity",
+							uuid = "1e2f81a5-fd34-87b6-900b-3706666a72e0",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 588.3,
+				name = "TBN",
+				timelineIndex = 96,
+				timerOffset = -6,
+				uuid = "2ce5b6a4-8fc6-6952-aa52-d92d1d1a6e54",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"556f6aab-04ec-a0fb-a37c-a2bbb283cdb6",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_OblationSelf",
+							uuid = "0dd5f8c1-ceb0-50ec-b3f8-2bd1840a385d",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"b6263198-b854-4435-81b5-7a0135741920",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Tankbar_OblationOT",
+							uuid = "92636108-5526-9cfe-842a-b2787ff2a914",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 4,
+							enmityValue = 100,
+							name = "MT Enmity",
+							uuid = "b6263198-b854-4435-81b5-7a0135741920",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							name = "Off Tank Enmity",
+							uuid = "556f6aab-04ec-a0fb-a37c-a2bbb283cdb6",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 588.3,
+				name = "Oblation reverse",
+				timelineIndex = 96,
+				timerOffset = -10,
+				uuid = "3f11ffea-f38b-c456-b9a8-ecf6d04fad99",
 				version = 2,
 			},
 		},
@@ -3432,8 +3398,8 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_Rampart",
-							uuid = "1979e87d-b9ee-8703-b6da-9f0dd1e4dd41",
+							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							uuid = "204d2559-ba37-e6fe-8e26-ce8144bd5379",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3443,10 +3409,39 @@ local tbl =
 				{
 				},
 				mechanicTime = 600.4,
-				name = "tiebi",
+				name = "Reprisal",
+				timelineIndex = 97,
+				timerOffset = -9,
+				uuid = "006b898a-3c2d-1390-bbe1-4529b2ca9808",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_Rampart",
+							uuid = "37a16a91-64c8-908c-a498-b43dae7b1b6d",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 600.4,
+				name = "Rampart",
 				timelineIndex = 97,
 				timerOffset = -19,
-				uuid = "76c7dec6-9961-c9d0-b5c8-b453b2af3dd8",
+				uuid = "915e7436-53fc-6577-b2cc-0160db8feb5a",
 				version = 2,
 			},
 		},
@@ -3465,12 +3460,12 @@ local tbl =
 							{
 								
 								{
-									"26e9b703-5375-6766-9c92-d49ff79757c3",
+									"f3f6a879-87c3-0688-8dd1-2c4c15cbcf75",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-							uuid = "44d8bdad-c2b2-0d1c-9856-6f9d5c55d735",
+							uuid = "03b92fec-2092-d7ff-94d3-dcee4f8c3732",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3484,12 +3479,12 @@ local tbl =
 							{
 								
 								{
-									"a95a5ad4-9d51-02d2-93a7-d6b738e275ae",
+									"6efffeeb-da40-4d61-9c3f-350ee587dcfe",
 									true,
 								},
 							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
-							uuid = "b8d17346-7a56-d8eb-a166-9129c34d531d",
+							uuid = "43a73071-7fae-13c4-8476-2d8e91f97892",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3504,7 +3499,7 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 100,
 							name = "MT Enmity",
-							uuid = "26e9b703-5375-6766-9c92-d49ff79757c3",
+							uuid = "f3f6a879-87c3-0688-8dd1-2c4c15cbcf75",
 							version = 2,
 						},
 					},
@@ -3516,16 +3511,16 @@ local tbl =
 							conditionType = 4,
 							enmityValue = 99,
 							name = "Off Tank Enmity",
-							uuid = "a95a5ad4-9d51-02d2-93a7-d6b738e275ae",
+							uuid = "6efffeeb-da40-4d61-9c3f-350ee587dcfe",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 600.4,
-				name = "heidun",
+				name = "TBN",
 				timelineIndex = 97,
 				timerOffset = -4,
-				uuid = "f9e918e7-b6e4-a2e8-9a67-c7c410cea847",
+				uuid = "659b6418-b92a-1e34-a4e7-72cdcd433030",
 				version = 2,
 			},
 		},
@@ -3544,7 +3539,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Tankbar_DarkMissionary",
-							uuid = "fd0a1e65-33ff-1795-8064-79cf64db1bbc",
+							uuid = "9e6d6282-bae0-61d3-bb36-c37a92d59022",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -3554,10 +3549,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 611.6,
-				name = "anheibudao",
+				name = "Dark Missionary",
 				timelineIndex = 98,
 				timerOffset = -15,
-				uuid = "c2da01e9-cd4a-9468-b0e0-5e2c79725207",
+				uuid = "7268a750-93a5-f283-b4c8-fe29baacf7fb",
 				version = 2,
 			},
 		},

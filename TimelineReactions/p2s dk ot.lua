@@ -845,7 +845,7 @@ local tbl =
 				mechanicTime = 152.2,
 				name = "heidun",
 				timelineIndex = 18,
-				timerOffset = -6,
+				timerOffset = -15,
 				uuid = "454ff832-b7a1-e8ce-9c72-dab2c8ae2189",
 				version = 2,
 			},
@@ -1668,8 +1668,129 @@ local tbl =
 			},
 		},
 	},
+	[37] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Hotbar_Provoke",
+							uuid = "2ca3f28a-1747-435f-8f31-12c6f66b0857",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 269.9,
+				name = "tiaoxin",
+				timelineIndex = 37,
+				uuid = "b0a94c17-f4e3-d2e0-bd55-d1c686ae5996",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
 	[38] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Hotbar_Provoke",
+							uuid = "2ca3f28a-1747-435f-8f31-12c6f66b0857",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 281.7,
+				name = "tiaoxin",
+				timelineIndex = 38,
+				uuid = "68877523-545e-e449-8353-6322a04261ad",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightMT",
+							uuid = "71541469-aeb1-c766-8799-050c58a44039",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 281.7,
+				name = "heidun",
+				timelineIndex = 38,
+				timerOffset = -6,
+				uuid = "d7f1b469-ad39-bef9-81ac-ad10d22c6f03",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_LivingDead",
+							uuid = "8d8cbae9-d693-64f5-9e6f-b2291ebaa0b6",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 281.7,
+				name = "wudi",
+				timelineIndex = 38,
+				timerOffset = -7,
+				uuid = "e22d659d-31ad-42d5-9e5e-060e14a112a8",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
 		
 		{
 			data = 
@@ -1717,36 +1838,6 @@ local tbl =
 				uuid = "bea08765-1c74-f0da-b253-4de76d29c398",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightMT",
-							uuid = "71541469-aeb1-c766-8799-050c58a44039",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 281.7,
-				name = "heidun",
-				timelineIndex = 38,
-				timerOffset = -6,
-				uuid = "d7f1b469-ad39-bef9-81ac-ad10d22c6f03",
-				version = 2,
-			},
-			inheritedIndex = 2,
 		},
 	},
 	[39] = 
@@ -3564,7 +3655,6 @@ local tbl =
 	},
 	inheritedProfiles = 
 	{
-		"store\\anyone\\savage\\p2s",
 		"store\\anyone\\savage1\\p2s",
 	},
 	mapID = 1005,
